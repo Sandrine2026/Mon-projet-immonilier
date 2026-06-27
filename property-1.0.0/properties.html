@@ -34,6 +34,65 @@
     <title>
       Site vitrine pour une agence immobilière
     </title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        h1{
+            text-align:center;
+            color:#003366;
+            margin:30px 0;
+        }
+
+        /* ---------- Filtres ---------- */
+
+        .filtres{
+            width:90%;
+            margin:20px auto;
+            background:#fff;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:15px;
+        }
+
+        .filtres select,
+        .filtres button{
+            padding:12px;
+            border-radius:6px;
+            border:1px solid #ccc;
+            font-size:16px;
+        }
+
+        .filtres button{
+            background:#007BFF;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        .filtres button:hover{
+            background:#0056b3;
+        }
+
+
+    </style>
+
+
   </head>
   <body>
     <div class="site-mobile-menu site-navbar-target">
@@ -798,6 +857,40 @@
         </div>
       </div>
     </div>
+
+
+    <section class="filtres">
+
+      <h2>Rechercher une annonce</h2>
+
+      <select>
+        <option>Tous les types</option>
+        <option>Appartement</option>
+        <option>Maison</option>
+        <option>Studio</option>
+        <option>Villa</option>
+      </select>
+
+      <select>
+        <option>Tous les prix</option>
+        <option>Moins de 50 000 FCFA</option>
+        <option>50 000 - 100 000 FCFA</option>
+        <option>100 000 - 200 000 FCFA</option>
+        <option>Plus de 200 000 FCFA</option>
+      </select>
+
+      <select>
+        <option>Toutes les localisations</option>
+        <option>Cotonou</option>
+        <option>Calavi</option>
+        <option>Porto-Novo</option>
+        <option>Parakou</option>
+      </select>
+
+        <button onclick="rechercher()">Rechercher</button>
+    </section>
+
+    
 
     <div class="site-footer">
       <div class="container">
